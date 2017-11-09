@@ -103,7 +103,15 @@ body {
     height: 80vw;
 }
 
-#lower_hand {
+#lower {
+    position: fixed;
+    left: 16vw;
+    width: 80vw;
+    height: 80vw;
+
+}
+
+.lower_hand {
     background-image: url(img/uden_finger.svg);
     background-size: 100%;
     animation-name: hand_move_up_kf;
