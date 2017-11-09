@@ -6,20 +6,21 @@ body {
 
 /*------ EARTH -----*/
 
-#scene {
+#scene_earth {
     background-image: url(img/background_earth.svg);
     background-size: cover;
     position: absolute;
     background-repeat: no-repeat;
-    width: 101vw;
+    width: 100%;
     height: 100%;
+    display: none;
 }
 
 #stars {
     background-image: url(img/stars_earth-01.svg);
     background-size: contain;
     background-repeat: repeat;
-    width: 101vw;
+    width: 100%;
     height: 100%;
     position: absolute;
     animation: pulse_kf 2.5s infinite alternate linear;
@@ -40,6 +41,7 @@ body {
 
 #earth_container {
     position: fixed;
+    top: -27vw;
     left: 25vw;
 }
 
@@ -50,8 +52,6 @@ body {
     background-size: 1600%;
     width: 50vw;
     height: 80vw;
-    top: -27vw;
-    position: absolute;
 }
 
 .earth_walkcycle {
@@ -73,3 +73,6 @@ body {
         background-position: 100%;
     }
 }
+
+/*------ SCENE 1 -------*/
+
