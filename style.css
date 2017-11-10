@@ -154,7 +154,7 @@ body {
 
 /* besked og stjerne */
 
-#besked {
+#besked_container {
 
     position: absolute;
     top: 15vw;
@@ -170,7 +170,7 @@ body {
     z-index: 10;
 }
 
-#stjerne {
+#stjerne_container {
     position: absolute;
     top: 4vw;
     animation: star_kf 1s infinite alternate linear;
@@ -204,7 +204,45 @@ body {
 
 /* censoreret billede */
 
-#censoreret {
+/*
+#lower_close {
+    position: absolute;
+    top: -14vw;
+    width: 120vw;
+    height: 120vw;
+
+}
+
+.lower_close_up {
+    background-image: url(img/hand_close.svg);
+    background-size: 100%;
+
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    left: 12vw;
+    z-index: 1;
+
+}
+
+#finger_close {
+    position: absolute;
+    top: -15vw;
+    width: 120vw;
+    height: 120vw;
+    background-repeat: no-repeat;
+}
+
+.finger_close_up {
+    background-image: url(img/finger_close.svg);
+    background-size: 100%;
+
+    animation-iteration-count: 1;
+    left: 10vw;
+    z-index: 99;
+}
+*/
+
+#censoreret_container {
     position: absolute;
     top: 5.2vw;
 }
@@ -220,7 +258,7 @@ body {
 
 }
 
-#mobil {
+#mobil_container {
     position: absolute;
     top: -15vw;
 }
@@ -233,4 +271,58 @@ body {
     width: 90vw;
     height: 80vw;
     left: 3vw;
+    z-index: 2;
+}
+
+/* censoreret billede slut */
+
+/* vidersend */
+
+#knap_container {
+
+    position: absolute;
+    top: 16vw;
+}
+
+.vidersend {
+    background-image: url(img/vidersend_k.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 25vw;
+    height: 25vw;
+    left: 39vw;
+    z-index: 11;
+
+}
+
+#finger_container {
+
+    position: absolute;
+    top: 25vw;
+
+}
+
+.finger_move_up {
+
+    background-image: url(img/finger_v.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 50vw;
+    height: 50vw;
+    left: 7vw;
+    z-index: 11;
+    animation-name: finger_move_up_kf;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    position: absolute;
+}
+
+
+@keyframes finger_move_up_kf {
+    0% {
+        top: 70vw;
+    }
+    100% {
+        top: 25vw;
+    }
 }

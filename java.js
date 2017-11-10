@@ -31,7 +31,7 @@ function besked() {
     $("#besked").addClass("besked_ind");
     $("#stjerne").addClass("stjerne_ind");
 
-    setTimeout(censoreret, 2000);
+    setTimeout(censoreret, 3000);
     $("#stjerne").on("animationend", censoreret);
 }
 
@@ -48,4 +48,17 @@ function censoreret() {
 
     $("#mobil").addClass("mobil_c");
     $("#censoreret").addClass("censoreret_billede");
+    setTimeout(vidersend, 2000);
+}
+
+
+function vidersend() {
+    console.log("vidersend billede");
+    $("#mobil").addClass("mobil_c");
+    $("#censoreret").removeClass("censoreret_billede");
+    $("#mobil").addClass("mobil_c");
+    $("#knap").addClass("vidersend");
+    $("#finger").addClass("finger_move_up");
+
+
 }
