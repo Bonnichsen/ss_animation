@@ -204,7 +204,6 @@ body {
 
 /* censoreret billede */
 
-/*
 #lower_close {
     position: absolute;
     top: -14vw;
@@ -240,7 +239,7 @@ body {
     left: 10vw;
     z-index: 99;
 }
-*/
+
 
 #censoreret_container {
     position: absolute;
