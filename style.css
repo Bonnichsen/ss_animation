@@ -78,36 +78,39 @@ body {
     background-image: url(img/background_earth.svg);
     background-size: cover;
     position: absolute;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 60vw;
+    overflow: hidden;
+    z-index: ;
 }
 
 #phone {
     background-image: url(img/mobil_hvid.svg);
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
-    width: 57vw;
-    height: 57vw;
+    width: 50vw;
+    height: 50vw;
     position: absolute;
-    left: 13vw;
-    top: -2vw;
-    z-index: 3;
-    display: none;
+    left: 32vw;
+    top: 2vw;
+    z-index: 4;
+    /*    display: none;*/
 }
 
 #hand_container {
-    position: fixed;
-    left: 16vw;
-    width: 80vw;
-    height: 80vw;
+    position: absolute;
+    left: 35vw;
+    top: 2vw;
+    width: 70vw;
+    height: 70vw;
 }
 
 #lower {
-    position: fixed;
-    left: 16vw;
-    width: 80vw;
-    height: 80vw;
+    position: absolute;
+    left: 35vw;
+    top: 2vw;
+    width: 70vw;
+    height: 70vw;
 
 }
 
@@ -117,10 +120,10 @@ body {
     animation-name: hand_move_up_kf;
     animation-duration: 5s;
     animation-iteration-count: 1;
-    position: absolute;
-    z-index: 2;
-    width: 80vw;
-    height: 80vw;
+    /*    position: absolute;*/
+    z-index: 1;
+    width: 70vw;
+    height: 70vw;
 
 }
 
@@ -131,7 +134,7 @@ body {
     animation-duration: 5s;
     animation-iteration-count: 1;
     position: absolute;
-    z-index: 2;
+    z-index: 1;
 }
 
 .fingers {
@@ -147,4 +150,87 @@ body {
     100% {
         top: 0;
     }
+}
+
+/* besked og stjerne */
+
+#besked {
+
+    position: absolute;
+    top: 15vw;
+}
+
+.besked_ind {
+    background-image: url(img/besked.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 20vw;
+    height: 20vw;
+    left: 49vw;
+    z-index: 10;
+}
+
+#stjerne {
+    position: absolute;
+    top: 4vw;
+    animation: star_kf 1s infinite alternate linear;
+}
+
+.pulse {
+    animation: star_kf 1s infinite alternate linear;
+}
+
+@keyframes star_kf {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.2);
+    }
+}
+
+.stjerne_ind {
+    background-image: url(img/star.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 20vw;
+    height: 20vw;
+    left: 22vw;
+    z-index: 10;
+
+}
+
+
+
+/* censoreret billede */
+
+#censoreret {
+    position: absolute;
+    top: 5.2vw;
+}
+
+.censoreret_billede {
+    background-image: url(img/nudecc.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 26vw;
+    height: 46vw;
+    left: 38.6vw;
+    z-index: 9;
+
+}
+
+#mobil {
+    position: absolute;
+    top: -15vw;
+}
+
+.mobil_c {
+
+    background-image: url(img/mobil_hvid.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 90vw;
+    height: 80vw;
+    left: 3vw;
 }
