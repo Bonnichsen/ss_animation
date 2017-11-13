@@ -325,3 +325,376 @@ body {
         top: 25vw;
     }
 }
+
+/* vidersend slut */
+
+/* baggrund 1 */
+
+#baggrund_one {}
+
+.baggrund {
+    background-image: url(img/baggrund_one.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 60vw;
+    z-index: 0;
+    position: absolute;
+    overflow: hidden;
+
+
+}
+
+.hands_one {
+    position: absolute;
+    background-image: url(img/pink_hand.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 55vw;
+    height: 55vw;
+    z-index: 99;
+    top: 6vw;
+    left: 55vw;
+    animation-name: hand_one_move_up_kf;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+}
+
+.hand_brun {
+    position: absolute;
+    background-image: url(img/brun_hand.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 60vw;
+    height: 60vw;
+    z-index: 99;
+    top: -6.7vw;
+    left: -5vw;
+    animation-name: hand_brun_move_down_kf;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    transform: scaleY(-1);
+}
+
+@keyframes hand_brun_move_down_kf {
+    0% {
+        top: -45vw;
+    }
+    100% {
+        top: -6.7vw;
+    }
+}
+
+@keyframes hand_one_move_up_kf {
+    0% {
+        top: 70vw;
+    }
+    100% {
+        top: 6vw;
+    }
+}
+
+/* baggrund 1 slut */
+
+/* baggrund 2 */
+
+#baggrund_two {}
+
+.baggrund_2 {
+    background-image: url(img/baggrund.svg);
+    background-size: cover;
+
+    width: 110vw;
+    height: 100vw;
+    position: absolute;
+    overflow: hidden;
+    left: -5vw;
+
+    /*        animation-name: baggrund_kf;*/
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-play-state: linear;
+    animation-timing-function: steps(3);
+
+}
+
+@keyframes baggrund_kf {
+    0% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: 0 -300%;
+    }
+}
+
+#forskellig_hand_one {
+
+    position: absolute;
+    top: 15vw;
+    animation-name: forskellig2_kf;
+}
+
+.forskellig_one {
+
+    background-image: url(img/forskelligef-02.svg);
+    background-size: 400%;
+    width: 35vw;
+    height: 35vw;
+    z-index: 99;
+    left: 74vw;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-play-state: linear;
+    animation-timing-function: steps(4);
+}
+
+@keyframes forskellig2_kf {
+    0% {
+        background-position: 0%;
+    }
+
+    100% {
+        background-position: -400%;
+    }
+}
+
+#forskellig_hand_two {
+    position: absolute;
+    top: -15vw;
+    animation-name: forskellig2_kf;
+    transform: scaleY(-1);
+}
+
+.forskellig_two {
+
+    background-image: url(img/forskellige2-02.svg);
+    background-size: 400%;
+    width: 45vw;
+    height: 45vw;
+    z-index: 99;
+    left: 22vw;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-play-state: linear;
+    animation-timing-function: steps(4);
+}
+
+@keyframes forskellig2_kf {
+    0% {
+        background-position: 0%;
+    }
+
+    100% {
+        background-position: -400%;
+    }
+}
+
+/* baggrund 2 slut */
+
+/* vidersend close up */
+
+#vidersend {
+    position: absolute;
+    top: -20vw;
+    animation: v_knap_kf 2s infinite alternate linear;
+}
+
+
+.pulse {
+    animation: v_knap_kf 2s infinite alternate linear;
+}
+
+@keyframes v_knap_kf {
+    0% {
+        transform: scale(0.9);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.v_knap {
+    background-image: url(img/vidersend_k.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vw;
+
+}
+
+#finger_klik {
+    position: absolute;
+    top: 19vw;
+
+}
+
+.f_klik {
+
+    background-image: url(img/finger_v.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vw;
+    left: -46vw;
+    z-index: 11;
+    animation-name: f_up_kf;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    position: absolute;
+}
+
+
+@keyframes f_up_kf {
+    0% {
+        top: 70vw;
+    }
+    100% {
+        top: 19vw;
+    }
+}
+
+
+/* computer og alt andet */
+
+#comp {
+    position: absolute;
+    top: -5vw;
+}
+
+.desktop {
+
+    background-image: url(img/laptop_hand.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 40vw;
+    height: 40vw;
+    left: -3vw;
+    z-index: 11;
+    animation-name: laptop_up_kf;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    position: absolute;
+}
+
+
+@keyframes laptop_up_kf {
+    0% {
+        left: -40vw;
+    }
+    100% {
+        left: -3vw;
+    }
+}
+
+
+
+#ipad {
+    position: absolute;
+    top: 2vw;
+}
+
+.ipad_in {
+    background-image: url(img/ipad_hand.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 34vw;
+    height: 34vw;
+    left: 68vw;
+    z-index: 99;
+    animation-name: ipad_up_kf;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    position: absolute;
+
+}
+
+@keyframes ipad_up_kf {
+    0% {
+        left: 99vw;
+    }
+    100% {
+        left: 68vw;
+    }
+}
+
+
+#ipad_s {
+    position: absolute;
+    top: 31vw;
+}
+
+.ipad_in_sort {
+    background-image: url(img/ipad_sort.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 40vw;
+    height: 40vw;
+    left: 30vw;
+    z-index: 99;
+    animation-name: ipad_sort_up_kf;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+    position: absolute;
+
+}
+
+@keyframes ipad_sort_up_kf {
+    0% {
+        top: 60vw;
+    }
+    100% {
+        top: 31vw;
+    }
+}
+
+
+
+#ipad_h_billede {
+    position: absolute;
+    top: 8vw;
+}
+
+.censo_ipad {
+    background-image: url(img/nude.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 13vw;
+    height: 13vw;
+    left: 74.5vw;
+    z-index: 999;
+}
+
+#laptop_billede {
+    position: absolute;
+    top: 4.6vw;
+
+}
+
+.censo_lap {
+
+    background-image: url(img/nude.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 8vw;
+    height: 8vw;
+    left: 20vw;
+    z-index: 999;
+}
+
+#ipad_s_billede {
+    position: absolute;
+    top: 37vw;
+
+}
+
+.censo_s_ipad {
+
+    background-image: url(img/nude.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 14vw;
+    height: 14vw;
+    left: 36.7vw;
+    z-index: 999;
+}
