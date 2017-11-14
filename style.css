@@ -13,17 +13,25 @@ body {
     background-repeat: no-repeat;
     width: 100%;
     height: 100%;
-    display: none;
+
+    z-index: 1;
 }
 
 #stars {
+    position: absolute;
+
+}
+
+.stars_in {
     background-image: url(img/stars_earth-01.svg);
     background-size: contain;
     background-repeat: repeat;
     width: 100%;
     height: 100%;
-    position: absolute;
+
     animation: pulse_kf 2.5s infinite alternate linear;
+    z-index: 99;
+
 }
 
 .pulse {
@@ -45,19 +53,19 @@ body {
     left: 25vw;
 }
 
-#earth_sprite {
+#earth_sprite {}
+
+.earth_walkcycle {
     background-image: url(img/spritesheet_earth.svg);
     background-size: 1600%;
     width: 50vw;
     height: 80vw;
-}
-
-.earth_walkcycle {
     animation-name: earth_walkcycle_kf;
     animation-duration: 10s;
     animation-iteration-count: infinite;
     animation-play-state: linear;
     animation-timing-function: steps(15);
+    z-index: 999;
 }
 
 @keyframes earth_walkcycle_kf {
@@ -81,7 +89,7 @@ body {
     width: 100vw;
     height: 60vw;
     overflow: hidden;
-    z-index: ;
+    z-index: 0;
 }
 
 #phone {
@@ -431,7 +439,7 @@ body {
 #forskellig_hand_one {
 
     position: absolute;
-    top: 15vw;
+    top: 12vw;
     animation-name: forskellig2_kf;
 }
 
@@ -439,25 +447,17 @@ body {
 
     background-image: url(img/forskelligef-02.svg);
     background-size: 400%;
-    width: 35vw;
-    height: 35vw;
+    width: 45vw;
+    height: 45vw;
     z-index: 99;
-    left: 74vw;
+    left: 67vw;
     animation-duration: 3s;
     animation-iteration-count: infinite;
     animation-play-state: linear;
     animation-timing-function: steps(4);
 }
 
-@keyframes forskellig2_kf {
-    0% {
-        background-position: 0%;
-    }
 
-    100% {
-        background-position: -400%;
-    }
-}
 
 #forskellig_hand_two {
     position: absolute;
@@ -489,6 +489,48 @@ body {
         background-position: -400%;
     }
 }
+
+#forskellig_hand_tre {
+
+    position: absolute;
+    top: 30.2vw;
+    animation-name: forskellig2_kf;
+
+}
+
+.forskellig_tre {
+    background-image: url(img/forskellige2-02.svg);
+    background-size: 400%;
+    width: 45vw;
+    height: 45vw;
+    z-index: 99;
+    left: 21vw;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-play-state: linear;
+    animation-timing-function: steps(4);
+}
+
+#forskellig_hand_fire {
+    position: absolute;
+    top: 4vw;
+    animation-name: forskellig2_kf;
+    transform: rotate(180deg);
+}
+
+.forskellig_fire {
+    background-image: url(img/forskelligef-02.svg);
+    background-size: 400%;
+    width: 45vw;
+    height: 45vw;
+    z-index: 99;
+    left: -13vw;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-play-state: linear;
+    animation-timing-function: steps(4);
+}
+
 
 /* baggrund 2 slut */
 
@@ -554,6 +596,7 @@ body {
     }
 }
 
+/* vidersend close up slut */
 
 /* computer og alt andet */
 
@@ -662,7 +705,7 @@ body {
     width: 13vw;
     height: 13vw;
     left: 74.5vw;
-    z-index: 999;
+    z-index: 99;
 }
 
 #laptop_billede {
@@ -696,5 +739,119 @@ body {
     width: 14vw;
     height: 14vw;
     left: 36.7vw;
-    z-index: 999;
+    z-index: 99;
+}
+
+/* computer og alt andet slut */
+
+/* tag et valg */
+
+#hand_del {
+    position: absolute;
+    top: -12vw;
+}
+
+.hand_del_censo {
+
+    background-image: url(img/lyser%C3%B8d.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 70vw;
+    height: 80vw;
+    z-index: ;
+
+    left: -9vw;
+    animation-name: hand_del_in_kf;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+
+}
+
+@keyframes hand_del_in_kf {
+    0% {
+        left: -60vw;
+    }
+    100% {
+        left: -9vw;
+    }
+}
+
+#tekst_del {
+    position: absolute;
+    top: 5vw;
+
+}
+
+.del {
+
+    background-image: url(img/tekst1.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 40vw;
+    height: 30vw;
+    left: 51vw;
+
+
+}
+
+
+
+
+#knap_ja {
+    position: absolute;
+    top: 37vw;
+}
+
+.ja {
+
+    background-image: url(img/ja_knap.svg);
+    background-size: 100%;
+    width: 20vw;
+    height: 20vw;
+    left: 50vw;
+    background-repeat: no-repeat;
+    animation: ja_knap_kf 1s infinite alternate linear;
+}
+
+.pulse {
+    animation: ja_knap_kf 1s infinite alternate linear;
+}
+
+@keyframes ja_knap_kf {
+    0% {
+        transform: scale(0.8);
+    }
+    100% {
+        transform: scale(0.9);
+    }
+}
+
+
+#knap_nej {
+    position: absolute;
+    top: 37vw;
+}
+
+.nej {
+    background-image: url(img/nej_knap.svg);
+    background-size: 100%;
+    width: 20vw;
+    height: 20vw;
+    left: 74vw;
+    background-repeat: no-repeat;
+    animation: nej_knap_kf 1s infinite alternate linear;
+
+}
+
+.pulse {
+    animation: nej_knap_kf 1s infinite alternate linear;
+}
+
+@keyframes nej_knap_kf {
+    0% {
+        transform: scale(0.8);
+    }
+    100% {
+        transform: scale(0.9);
+    }
 }

@@ -89,6 +89,8 @@ function allHands() {
     $("#baggrund_two").addClass("baggrund_2");
     $("#forskellig_hand_one").addClass("forskellig_one");
     $("#forskellig_hand_two").addClass("forskellig_two");
+    $("#forskellig_hand_tre").addClass("forskellig_tre");
+    $("#forskellig_hand_fire").addClass("forskellig_fire");
     setTimeout(vidersendKnap, 5000);
 }
 
@@ -98,6 +100,8 @@ function vidersendKnap() {
     $("#baggrund_two").removeClass("baggrund_2");
     $("#forskellig_hand_one").removeClass("forskellig_one");
     $("#forskellig_hand_two").removeClass("forskellig_two");
+    $("#forskellig_hand_tre").removeClass("forskellig_tre");
+    $("#forskellig_hand_fire").removeClass("forskellig_fire");
 
     $("#vidersend").addClass("v_knap");
     $("#finger_klik").addClass("f_klik");
@@ -119,10 +123,61 @@ function laptopIpadIn() {
 }
 
 function billedeIn() {
-    console.log("lbilleder der hører til");
+    console.log("billeder der hører til");
     $("#laptop_billede").addClass("censo_lap");
     $("#ipad_h_billede").addClass("censo_ipad");
     $("#ipad_s_billede").addClass("censo_s_ipad");
+    setTimeout(earthCycle, 4000);
+
+}
+
+function earthCycle() {
+    console.log("jordklode kommer ind");
+    $("#comp").removeClass("desktop");
+    $("#ipad").removeClass("ipad_in");
+    $("#ipad").removeClass("ipad_in");
+    $("#ipad_s").removeClass("ipad_in_sort");
+    $("#laptop_billede").removeClass("censo_lap");
+    $("#ipad_h_billede").removeClass("censo_ipad");
+    $("#ipad_s_billede").removeClass("censo_s_ipad");
+
+    $("#stars").addClass("stars_in");
+    $("#earth_sprite").addClass("earth_walkcycle");
+    setTimeout(jaEllerNej, 4000);
+}
+
+function jaEllerNej() {
+    console.log("vil du dele billedet");
+    $("#stars").removeClass("stars_in");
+    $("#earth_sprite").removeClass("earth_walkcycle");
+
+
+    $("#hand_del").addClass("hand_del_censo");
+    setTimeout(tagValg, 2000);
+}
+
+
+function tagValg() {
+    console.log("ja eller nej");
+
+    $("#tekst_del").addClass("del");
+    $("#knap_ja").addClass("ja");
+    $("#knap_nej").addClass("nej");
+    setTimeout(trykJa, 2000);
+}
+
+$("#knap_ja").on("click", trykJa);
+
+function trykJa() {
+    console.log("valg ja");
+
+
+}
+
+$("#knap_nej").on("click", trykNej);
+
+function trykNej() {
+    console.log("valg nej");
 
 
 }
