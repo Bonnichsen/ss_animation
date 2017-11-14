@@ -127,7 +127,7 @@ function billedeIn() {
     $("#laptop_billede").addClass("censo_lap");
     $("#ipad_h_billede").addClass("censo_ipad");
     $("#ipad_s_billede").addClass("censo_s_ipad");
-    setTimeout(earthCycle, 4000);
+    setTimeout(earthCycle, 3000);
 
 }
 
@@ -163,7 +163,7 @@ function tagValg() {
     $("#tekst_del").addClass("del");
     $("#knap_ja").addClass("ja");
     $("#knap_nej").addClass("nej");
-    setTimeout(trykJa, 2000);
+    setTimeout(trykJa, 90000);
 }
 
 $("#knap_ja").on("click", trykJa);
@@ -171,13 +171,37 @@ $("#knap_ja").on("click", trykJa);
 function trykJa() {
     console.log("valg ja");
 
+    $("#tekst_del").removeClass("del");
+    $("#knap_ja").removeClass("ja");
+    $("#knap_nej").removeClass("nej");
+    $("#hand_del").removeClass("hand_del_censo");
 
+    $("#pige_ked").addClass("pige");
+    $("#dreng_ked").addClass("dreng");
+    $("#baggrund_pd").addClass("bag");
+    setTimeout(policeMan, 5000);
+}
+
+function policeMan() {
+    console.log("politi man og lov");
+    $("#pige_ked").removeClass("pige");
+    $("#dreng_ked").removeClass("dreng");
+    $("#baggrund_pd").removeClass("bag");
+
+    $("#lov_baggrund").addClass("baggrund_lov");
+    $("#information").addClass("info");
+    $("#police_man").addClass("man");
 }
 
 $("#knap_nej").on("click", trykNej);
 
 function trykNej() {
     console.log("valg nej");
-
+    $("#pige_ked").removeClass("pige");
+    $("#dreng_ked").removeClass("dreng");
+    $("#baggrund_pd").removeClass("bag");
+    $("#lov_baggrund").addClass("baggrund_lov");
+    $("#information").addClass("info");
+    $("#police_lady").addClass("lady");
 
 }

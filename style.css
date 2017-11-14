@@ -857,3 +857,140 @@ body {
 }
 
 /* tag et valg slut */
+
+/* valg ja */
+
+#baggrund_pd {}
+
+.bag {
+    background-image: url(img/pigedrengb.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 60vw;
+    z-index: 0;
+    position: absolute;
+    overflow: hidden;
+}
+
+
+#pige_ked {
+    position: absolute;
+    top: 1vw;
+
+
+}
+
+.pige {
+    background-image: url(img/pige.svg);
+    background-size: 800%;
+    width: 50vw;
+    height: 60vw;
+    left: 52vw;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-play-state: linear;
+    animation-timing-function: steps(8);
+    animation-name: pige_kf;
+}
+
+
+
+@keyframes pige_kf {
+    0% {
+        background-position: 0%;
+    }
+
+    100% {
+        background-position: -800%;
+    }
+}
+
+#dreng_ked {
+    position: absolute;
+    top: 1vw;
+
+
+}
+
+.dreng {
+    background-image: url(img/dreng.svg);
+    background-size: 800%;
+    width: 50vw;
+    height: 60vw;
+
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-play-state: linear;
+    animation-timing-function: steps(8);
+    animation-name: dreng_kf;
+}
+
+
+
+@keyframes dreng_kf {
+    0% {
+        background-position: 0%;
+    }
+
+    100% {
+        background-position: -800%;
+    }
+}
+
+#lov_baggrund {}
+
+.baggrund_lov {
+    background-image: url(img/lovbaggrund.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 60vw;
+    z-index: 0;
+    position: absolute;
+    overflow: hidden;
+}
+
+#information {
+    position: absolute;
+    top: 1.5vw;
+}
+
+.info {
+    background-image: url(img/lovgivning_1.png);
+    background-size: 100%;
+    width: 32vw;
+    height: 60vw;
+    left: 50vw;
+    background-repeat: no-repeat;
+
+}
+
+#police_man {
+    position: absolute;
+    top: 2vw;
+}
+
+.man {
+    background-image: url(img/policeman.svg);
+    background-size: 100%;
+    width: 26vw;
+    height: 70vw;
+    left: 16vw;
+    background-repeat: no-repeat;
+}
+
+
+#police_lady {
+    position: absolute;
+    top: 2vw;
+}
+
+.lady {
+    background-image: url(img/policelady.svg);
+    background-size: 100%;
+    width: 26vw;
+    height: 70vw;
+    left: 16vw;
+    background-repeat: no-repeat;
+}
