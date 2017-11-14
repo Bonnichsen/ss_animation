@@ -119,7 +119,7 @@ function laptopIpadIn() {
     $("#ipad").addClass("ipad_in");
     $("#ipad").addClass("ipad_in");
     $("#ipad_s").addClass("ipad_in_sort");
-    setTimeout(billedeIn, 6000);
+    setTimeout(billedeIn, 4000);
 }
 
 function billedeIn() {
@@ -153,7 +153,7 @@ function jaEllerNej() {
 
 
     $("#hand_del").addClass("hand_del_censo");
-    setTimeout(tagValg, 2000);
+    setTimeout(tagValg, 4000);
 }
 
 
