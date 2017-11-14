@@ -322,7 +322,7 @@ body {
 }
 
 .vidersend {
-    background-image: url(img/vidersend_k.svg);
+    background-image: url(img/vidersend_knapf.svg);
     background-size: cover;
     background-repeat: no-repeat;
     width: 25vw;
@@ -587,7 +587,7 @@ body {
 }
 
 .v_knap {
-    background-image: url(img/vidersend_k.svg);
+    background-image: url(img/vidersend_knapf.svg);
     background-size: cover;
     background-repeat: no-repeat;
     width: 100vw;
