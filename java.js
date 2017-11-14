@@ -204,6 +204,8 @@ function policeMan() {
     $("#lov_baggrund").addClass("baggrund_lov");
     $("#information").addClass("info");
     $("#police_man").addClass("man");
+    $("#privat_knap").addClass("privat");
+
 }
 
 $("#knap_nej").on("click", trykNej);
@@ -213,6 +215,8 @@ function trykNej() {
     $("#pige_ked").removeClass("pige");
     $("#dreng_ked").removeClass("dreng");
     $("#baggrund_pd").removeClass("bag");
+
+    $("#privat_knap").addClass("privat");
     $("#lov_baggrund").addClass("baggrund_lov");
     $("#information").addClass("info");
     $("#police_lady").addClass("lady");

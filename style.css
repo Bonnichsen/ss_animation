@@ -997,16 +997,17 @@ body {
 
 #information {
     position: absolute;
-    top: 1.5vw;
+    top: 1vw;
 }
 
 .info {
     background-image: url(img/lovgivning_1.png);
     background-size: 100%;
-    width: 32vw;
-    height: 60vw;
+    width: 27vw;
+    height: 52vw;
     left: 50vw;
     background-repeat: no-repeat;
+    z-index: 99;
 
 }
 
@@ -1037,4 +1038,18 @@ body {
     height: 70vw;
     left: 16vw;
     background-repeat: no-repeat;
+}
+
+#privat_knap {
+    position: absolute;
+    top: 47.4vw;
+}
+
+.privat {
+    background-image: url(img/privat.svg);
+    background-size: 100%;
+    width: 15vw;
+    height: 15vw;
+    left: 55vw;
+    z-index: 99;
 }
