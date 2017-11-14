@@ -3,6 +3,36 @@ body {
     padding: 0;
 }
 
+/* forside */
+
+#forside {}
+
+.side {
+    background-image: url(img/forsidenn.svg);
+    background-size: cover;
+    position: absolute;
+    width: 100vw;
+    height: 60vw;
+    overflow: hidden;
+    z-index: 98;
+
+}
+
+#start {
+    position: absolute;
+    top: 40vw;
+}
+
+.start_knap {
+
+    background-image: url(img/start_knap2.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 30vw;
+    height: 20vw;
+    left: 5vw;
+    z-index: 99;
+}
 
 /*------ EARTH -----*/
 

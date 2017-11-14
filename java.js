@@ -1,7 +1,19 @@
 $(window).on("load", startAnim);
 
 function startAnim() {
+    $("#forside").addClass("side");
+    $("#start").addClass("start_knap");
+    $("#phone").hide();
+
+    $("#hand_container").on("animationend", handOneIn);
+}
+
+$("#start").on("click", handOneIn);
+
+function handOneIn() {
     console.log("hånd kommer ind");
+    $("#forside").removeClass("side");
+    $("#start").removeClass("start_knap");
     $("#hand_container").addClass("hand_move_up");
     $("#lower").addClass("lower_hand");
     setTimeout(function () {
@@ -9,6 +21,7 @@ function startAnim() {
     }, 500);
     $("#hand_container").on("animationend", fingers);
 }
+
 
 function fingers() {
     console.log("fingre kommer ind")
