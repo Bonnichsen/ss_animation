@@ -1,6 +1,7 @@
 body {
     margin: 0;
     padding: 0;
+    cursor: url(img/mus.svg), auto;
 }
 
 /* forside */
@@ -32,6 +33,7 @@ body {
     height: 20vw;
     left: 5vw;
     z-index: 99;
+    animation: ja_knap_kf 1s infinite alternate linear;
 }
 
 /*------ EARTH -----*/
@@ -120,6 +122,7 @@ body {
     height: 60vw;
     overflow: hidden;
     z-index: 0;
+    cursor: url(img/finger_v.svg);
 }
 
 #phone {
@@ -524,7 +527,7 @@ body {
 
     position: absolute;
     top: 30.2vw;
-    animation-name: forskellig2_kf;
+    animation-name: forskellig3_kf;
 
 }
 
@@ -539,6 +542,16 @@ body {
     animation-iteration-count: infinite;
     animation-play-state: linear;
     animation-timing-function: steps(4);
+}
+
+@keyframes forskellig3_kf {
+    0% {
+        background-position: 0%;
+    }
+
+    100% {
+        background-position: -400%;
+    }
 }
 
 #forskellig_hand_fire {
@@ -820,6 +833,7 @@ body {
     width: 40vw;
     height: 30vw;
     left: 51vw;
+
 
 
 }
