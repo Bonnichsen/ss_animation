@@ -5,6 +5,8 @@ function startAnim() {
     $("#start").addClass("start_knap");
     $("#phone").hide();
 
+    $("#background_sound")[0].play();
+
     $("#hand_container").on("animationend", handOneIn);
 }
 
@@ -43,6 +45,8 @@ function besked() {
     $("#hand_container").off("animationend", besked);
     $("#besked_container").addClass("besked_ind");
     $("#stjerne_container").addClass("stjerne_ind");
+
+    $("#social_media_sound")[0].play();
 
     setTimeout(censoreret, 3000);
     $("#stjerne_container").on("animationend", censoreret);
@@ -87,6 +91,9 @@ function twoHandsIn() {
     $("#baggrund_one").addClass("baggrund");
     $("#hand_p").addClass("hands_one");
     $("#hand_b").addClass("hand_brun");
+
+    $("#button_sound")[0].play();
+
     setTimeout(allHands, 5000);
 }
 
@@ -104,6 +111,9 @@ function allHands() {
     $("#forskellig_hand_two").addClass("forskellig_two");
     $("#forskellig_hand_tre").addClass("forskellig_tre");
     $("#forskellig_hand_fire").addClass("forskellig_fire");
+
+
+
     setTimeout(vidersendKnap, 5000);
 }
 
@@ -132,6 +142,9 @@ function laptopIpadIn() {
     $("#ipad").addClass("ipad_in");
     $("#ipad").addClass("ipad_in");
     $("#ipad_s").addClass("ipad_in_sort");
+
+    $("#button_sound")[0].play();
+
     setTimeout(billedeIn, 4000);
 }
 
@@ -156,6 +169,9 @@ function earthCycle() {
 
     $("#stars").addClass("stars_in");
     $("#earth_sprite").addClass("earth_walkcycle");
+
+    $("#social_media_all")[0].play();
+
     setTimeout(jaEllerNej, 4000);
 }
 
@@ -192,6 +208,11 @@ function trykJa() {
     $("#pige_ked").addClass("pige");
     $("#dreng_ked").addClass("dreng");
     $("#baggrund_pd").addClass("bag");
+
+    $("#fail_sound")[0].play();
+
+    $("#background_sound")[0].pause();
+
     setTimeout(policeMan, 5000);
 }
 
@@ -220,5 +241,6 @@ function trykNej() {
     $("#lov_baggrund").addClass("baggrund_lov");
     $("#information").addClass("info");
     $("#police_lady").addClass("lady");
+    $("#win_sound")[0].play();
 
 }
